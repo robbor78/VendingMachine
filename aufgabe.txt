@@ -1,0 +1,49 @@
+Der Getränkeautomat – Eine Programmieraufgabe
+
+Aufgabenstellung
+Entwickeln Sie die Prozesslogik eines Getränkeautomaten inklusive einer Funktionalität um
+Wechselgeld zurückzugeben. Der Automat verfügt dabei über mehrere Fächer mit
+verschiedenen Getränken. Jedem Fach kann dabei ein bestimmter Preis zugeordnet werden.
+Stellen Sie die Prozesslogik über ein zweckmäßig benanntes und typisiertes Interface zur
+Verfügung. Implementieren Sie die Automatensoftware auf Basis dieses Interface. Zeigen
+Sie anhand einiger automatisierter Beispieltests, dass Ihr Code korrekt funktioniert.
+Die Hauptfunktion Ihres Codes könnte zum Beispiel so aussehen:
+DrinkAndChange buy(Drink selection, Coin... coinInput);
+Diese Funktion gibt entweder das ausgewählte Getränk und gegebenenfalls das
+Wechselgeld oder aber einen Fehler aus, zum Beispiel wenn das gewählte Getränk
+ausverkauft ist, der eingeworfene Geldbetrag nicht zur Bezahlung des ausgewählten
+Getränkes ausreicht oder der Getränkeautomat kann passendes Wechselgeld herausgeben
+kann. Der Automat sollte dabei natürlich immer die kleinstmögliche Anzahl an Münzen
+zurückgeben. Als Vorgabe soll der Getränkeautomat folgende Münzen akzeptieren: 10, 20,
+50 Cent sowie 1 und 2 Euro.
+
+Beispiel: Der Kunde kauft ein Getränk zum Preis von 1,20 Euro. Er wirft eine 2 Euro-Münze
+ein. Dann könnte der Automat das Wechselgeld von insgesamt 80 Cent zum Beispiel in
+Form einer 50 Cent Münze, einer 20 Cent Münze und einer 10 Cent Münze herausgeben.
+Sind aber keine 20 Cent Münzen mehr verfügbar, dann sollte er eine 50 Cent und drei 10
+Cent Münzen ausgeben.
+Der Vorrat an Getränken und Wechselgeld ist begrenzt. Daher sollte das Programm neben
+der Hauptprozedur auch eine Funktion zum Auffüllen und Leeren des Automaten mit
+Getränken und Wechselgeld beinhalten. Bitte gestalten Sie Ihre Implementierung nur so
+anpassungsfähig wie angesichts der oben stehenden Spezifikation notwendig. Das heißt
+beispielsweise, dass natürlich verschiedene Getränke zu verschiedenen Preisen unterstützt
+werden müssen, nicht jedoch krumme Preise (zum Beispiel 1,25 Euro), die weitere
+Münzwerte als die genannten erforderlich machen.
+Die Programmieraufgabe erfordert weder eine grafische Benutzerschnittstelle, noch das
+Persistieren der Automatenzustände in einer Datenbank. Eine In-Memory-Lösung reicht
+völlig aus.
+Der Weg ist das Ziel
+Das Hauptziel dieser Programmieraufgabe ist es eine elegante und einfach zu verstehende
+Implementierung umzusetzen, die so weit wie möglich allgemein verständliche Begriffe
+benutzt. Gehen Sie hierzu bitte objektorientiert vor und nutzen Sie die von der gewählten
+Programmiersprache bereitgestellten Features, soweit Ihnen das angemessen erscheint.
+Vermeiden Sie es aber diese dort zu verwenden, wo es nicht nötig ist, das gilt natürlich
+insbesondere für 3rd-Party Bibliotheken.
+Es ist nicht zwingend erforderlich eine voll funktionsfähige Lösung bereitzustellen. Eine
+Teillösung ist auch akzeptabel, solange sie in sich schlüssig und lauffähig ist, und dies auch
+durch entsprechende automatisierte Tests dargelegt werden kann. Die Aufgabe sollte
+innerhalb von 2 bis 4 Stunden gelöst werden.
+Bitte stellen Sie uns zur Verfügung:
+• Ihren Quellcode inklusive der Tests und Dokumentation
+• Eine kurze Readme-Datei zur Programm- und Testausführung
+
